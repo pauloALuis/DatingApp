@@ -13,6 +13,7 @@ namespace API.Data
         public DataContext(DbContextOptions options) : base(options)
         {
             //extend fosse
+            //informa
         }
         //dotnet ef migrations add InitialCreate --context DataContext
         //dotnet ef migrations add InitialCreate -o Data/Migrations
