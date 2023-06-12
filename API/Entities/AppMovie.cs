@@ -6,8 +6,8 @@ namespace API.Entities
     public class AppMovie
     {
         [Key]
-        [DisplayName ("Nº User")]
-        public int Id { get; set; }   
+        [DisplayName("Nº User")]
+        public int Id { get; set; }
         [Required]
         public string Title { get; set; }
 

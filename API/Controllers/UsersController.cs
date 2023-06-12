@@ -1,12 +1,14 @@
 using API.Data;
 using API.Entities;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.VisualBasic;
 
 namespace API.Controllers
 {
 
     [ApiController]
-    [Route("[api/Controller]")] // route: api/User
+    [Route("api/[Controller]")] // route: api/User
     public class UsersController : ControllerBase
     {
         private readonly DataContext _dataContext;
@@ -16,38 +18,56 @@ namespace API.Controllers
             _dataContext = dataContext;
         }
 
-        #region Get users all/ get user by id
+        #region Get users all/ get user by id - Sinc
+
+        /*
 
 
 
+                // GET: api/<ValuesController> // api/values  
+                [HttpGet] //https://localhost:5001/api/Users/  
+                public ActionResult<IEnumerable<AppUser>> GetUsers()
+                {
+                    var users = _dataContext.Users.ToList();
+                    return users;
+                } 
+
+                // GET api/<ValuesController>/5   
+                [HttpGet("{id}")] //https://localhost:5001/api/Users/  6   
+                public ActionResult <AppUser> GetUser(int id)
+                {
+                    var user = _dataContext.Users.Find(id);
+
+                    return user ;
+                }
+
+
+                // POST api/<ValuesController>  
+                // [HttpPost]
+                // public void Post([FromBody] string value)
+                // {
+
+                // }
+        */
+        #endregion
+
+        #region Get users all/ get user by id - ASYNC 
         // GET: api/<ValuesController> // api/values  
-        [HttpGet] //https://localhost:44319/api/Users/  
-        public ActionResult<IEnumerable<AppUser>> GetUsers()
+        [HttpGet] //https://localhost:5001/api/Users/  
+        public async Task<ActionResult<IEnumerable<AppUser>>> GetUsers()
         {
-            var users = _dataContext.Users.ToList();
-
-            return (users.Count ==  0) ? BadRequest() : users;
-        } 
-
-        // GET api/<ValuesController>/5   
-        [HttpGet("{id}")] //https://localhost:44319/api/Users/  6   
-        public ActionResult <AppUser> GetUser(int id)
-        {
-            var user = _dataContext.Users.Find(id);
-
-            return user == null? BadRequest(): user ;
+            var users = await _dataContext.Users.ToListAsync();
+            return users;
         }
 
-        #endregion -----------------------------------------------------------
-
-        #region Post user by id
-        // POST api/<ValuesController>  
-        // [HttpPost]
-        // public void Post([FromBody] string value)
-        // {
-
-        // }
-
+        // GET api/<ValuesController>/5   
+        [HttpGet("{id}")] //https://localhost:5001/api/User/6   
+        public async Task<ActionResult<AppUser>> GetUser(int id)
+        {
+            var user = await _dataContext.Users.FindAsync(id);
+            return user;
+        }
         #endregion
+
     }
 }

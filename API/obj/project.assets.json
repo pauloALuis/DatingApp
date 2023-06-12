@@ -1270,11 +1270,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Paulucho Luis\\Documents\\CourseAspNetApiAngular\\DatingApp\\API\\API.csproj",
+      "projectUniqueName": "c:\\Users\\Paulucho Luis\\Documents\\CourseAspNetApiAngular\\DatingApp\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\Paulucho Luis\\Documents\\CourseAspNetApiAngular\\DatingApp\\API\\API.csproj",
+      "projectPath": "c:\\Users\\Paulucho Luis\\Documents\\CourseAspNetApiAngular\\DatingApp\\API\\API.csproj",
       "packagesPath": "C:\\Users\\Paulucho Luis\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Paulucho Luis\\Documents\\CourseAspNetApiAngular\\DatingApp\\API\\obj\\",
+      "outputPath": "c:\\Users\\Paulucho Luis\\Documents\\CourseAspNetApiAngular\\DatingApp\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Paulucho Luis\\AppData\\Roaming\\NuGet\\NuGet.Config",
