@@ -24,7 +24,7 @@ namespace API.Controllers
             return movies;
         }
         // GET api/<ValuesController>/5   
-        [HttpGet("{id}")] //https://localhost:44319/api/Movie/6   
+        [HttpGet("{id}", Name = "Movie")] //https://localhost:44319/api/Movie/6   
         public async Task<ActionResult<AppMovie>> GetMovie(int id)
         {
             var moveis = await _context.Movies.FindAsync(id);

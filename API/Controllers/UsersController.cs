@@ -61,7 +61,7 @@ namespace API.Controllers
         }
 
         // GET api/<ValuesController>/5   
-        [HttpGet("{id}")] //https://localhost:5001/api/User/6   
+        [HttpGet("{id}", Name = "User")] //https://localhost:5001/api/User/6   
         public async Task<ActionResult<AppUser>> GetUser(int id)
         {
             var user = await _dataContext.Users.FindAsync(id);
