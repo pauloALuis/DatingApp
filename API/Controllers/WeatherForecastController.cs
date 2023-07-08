@@ -1,16 +1,17 @@
+using API.Data;
 using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers;
 
-[ApiController]
-[Route("[controller]")]
-public class WeatherForecastController : ControllerBase
+//[ApiController]
+//[Route("[controller]")]
+public class WeatherForecastController : BaseApiController
 {
     private static readonly string[] Summaries = new[]
     {
         "Freezing1", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
     };
-
+    private readonly DataContext _context;
     private readonly ILogger<WeatherForecastController> _logger;
 
     public WeatherForecastController(ILogger<WeatherForecastController> logger)

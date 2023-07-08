@@ -5,9 +5,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace API.Controllers
 {
-    [ApiController]
-    [Route("api/[Controller]")] // api/Movies
-    public class MoviesController : ControllerBase
+    //[ApiController]
+    //[Route("api/[Controller]")] // api/Movies
+    public class MoviesController : BaseApiController
     {
         private readonly DataContext _context;
 

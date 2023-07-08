@@ -7,9 +7,9 @@ using Microsoft.VisualBasic;
 namespace API.Controllers
 {
 
-    [ApiController]
-    [Route("api/[Controller]")] // route: api/User
-    public class UsersController : ControllerBase
+    // [ApiController]
+    //[Route("api/[Controller]")] // route: api/User
+    public class UsersController : BaseApiController
     {
         private readonly DataContext _dataContext;
 
@@ -17,6 +17,12 @@ namespace API.Controllers
         {
             _dataContext = dataContext;
         }
+
+        /*
+            public UsersController(DataContext dataContext)
+           {
+               _dataContext = dataContext;
+           } */
 
         #region Get users all/ get user by id - Sinc
 

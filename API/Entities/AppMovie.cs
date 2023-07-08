@@ -11,12 +11,11 @@ namespace API.Entities
         [Required]
         public string Title { get; set; }
 
-        [Required]
-        [StringLength(5)]
+        [StringLength(50)]
         public string Director { get; set; }
 
         [DisplayName("Date Released")]
         [Required]
-        public int DateReleased { get; set; }
+        public string DateReleased { get; set; }
     }
 }
