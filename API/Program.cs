@@ -1,4 +1,6 @@
 using API.Data;
+using API.Interfaces;
+using API.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,6 +13,9 @@ builder.Services.AddDbContext<DataContext>(optionsAction  =>{
 } );
 //services.AddDbContext<YourContextClassName>(x => x.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddCors();
+
+builder.Services.AddScoped<ITokenService, TokenServices>();
+
 var app = builder.Build();
 
 //app.UseHttpsRedirection();

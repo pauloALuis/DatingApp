@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Paulucho Luis\\Documents\\CourseAspNetApiAngular\\DatingApp\\API\\API.csproj": {}
+    "c:\\Users\\Paulucho Luis\\Documents\\CourseAspNetApiAngular\\DatingApp\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Paulucho Luis\\Documents\\CourseAspNetApiAngular\\DatingApp\\API\\API.csproj": {
+    "c:\\Users\\Paulucho Luis\\Documents\\CourseAspNetApiAngular\\DatingApp\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Paulucho Luis\\Documents\\CourseAspNetApiAngular\\DatingApp\\API\\API.csproj",
+        "projectUniqueName": "c:\\Users\\Paulucho Luis\\Documents\\CourseAspNetApiAngular\\DatingApp\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\Paulucho Luis\\Documents\\CourseAspNetApiAngular\\DatingApp\\API\\API.csproj",
+        "projectPath": "c:\\Users\\Paulucho Luis\\Documents\\CourseAspNetApiAngular\\DatingApp\\API\\API.csproj",
         "packagesPath": "C:\\Users\\Paulucho Luis\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Paulucho Luis\\Documents\\CourseAspNetApiAngular\\DatingApp\\API\\obj\\",
+        "outputPath": "c:\\Users\\Paulucho Luis\\Documents\\CourseAspNetApiAngular\\DatingApp\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Paulucho Luis\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -21,9 +21,7 @@
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://pkgs.dev.azure.com/17359PAL/_packaging/17359PAL/nuget/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
@@ -50,6 +48,10 @@
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
               "version": "[7.0.5, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.31.0, )"
             }
           },
           "imports": [
