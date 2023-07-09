@@ -5,10 +5,9 @@ using System.Threading.Tasks;
 
 namespace API.DTOs
 {
-    public class REgisterDTO
+    public class UserDto
     {
-        public REgisterDTO()
-        {
-        }
+        public string Username { get; set; }
+        public string Token { get; set; }
     }
 }

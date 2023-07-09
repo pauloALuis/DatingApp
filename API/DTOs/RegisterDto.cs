@@ -12,7 +12,7 @@ namespace API.DTOs
         [StringLength(15, MinimumLength = 2)]
         public string UserName { get; set; }
         [Required(ErrorMessage = "Campo mandatorio")]
-        [StringLength(8, MinimumLength = 4)]
+        [StringLength(12, MinimumLength = 2)]
         public string Password { get; set; }
 
     }
