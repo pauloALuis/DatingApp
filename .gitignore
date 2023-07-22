@@ -1,0 +1,16 @@
+API/bin/Debug/net7.0/Microsoft.IdentityModel.Abstractions.dll
+API/appsettings.Development.json
+API/obj/Debug/net7.0/refint/API.dll
+API/obj/Debug/net7.0/ref/API.dll
+API/obj/Debug/net7.0/ref/API.dll
+API/obj/Debug/net7.0/API.dll
+API/obj/Debug/net7.0/API.csproj.FileListAbsolute.txt
+API/obj/Debug/net7.0/API.csproj.AssemblyReference.cache
+API/obj/Debug/net7.0/API.assets.cache
+API/obj/project.nuget.cache
+API/obj/API.csproj.nuget.dgspec.json
+API/bin/Debug/net7.0/System.IdentityModel.Tokens.Jwt.dll
+API/bin/Debug/net7.0/Microsoft.IdentityModel.Tokens.dll
+API/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.dll
+API/bin/Debug/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+API/appsettings.Development.json
