@@ -14,3 +14,4 @@ API/bin/Debug/net7.0/Microsoft.IdentityModel.Tokens.dll
 API/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.dll
 API/bin/Debug/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
 API/appsettings.Development.json
+node_modules

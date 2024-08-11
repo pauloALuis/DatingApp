@@ -26,8 +26,8 @@ public class WeatherForecastController : BaseApiController
         {
             Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
             TemperatureC = Random.Shared.Next(-20, 55),
-            Summary = "Hello Wuorld"//Summaries[Random.Shared.Next(Summaries.Length)]
-        })
+            Summary = Summaries[Random.Shared.Next(Summaries.Length)]
+        })//"Hello Wuorld"//
         .ToArray();
     }
 }

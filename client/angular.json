@@ -33,7 +33,8 @@
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js"
-            ]
+            ],
+            "aot": true
           },
           "configurations": {
             "production": {
@@ -63,11 +64,11 @@
           "defaultConfiguration": "production"
         },
         "serve": {
-         "options": {
+          "options": {
             "sslCert": "./ssl/server.crt",
             "sslKey": "./ssl/server.key",
             "ssl": true
-         }, 
+          },
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {

@@ -1,5 +1,7 @@
 namespace API;
-
+/// <summary>
+/// 
+/// </summary>
 public class WeatherForecast
 {
     public DateOnly Date { get; set; }

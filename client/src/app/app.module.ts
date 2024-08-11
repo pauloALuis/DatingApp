@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { NavComponent } from './nav/nav.component';
 import { FormsModule } from '@angular/forms';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { AccordionModule } from 'ngx-bootstrap/accordion';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -13,13 +16,16 @@ import { FormsModule } from '@angular/forms';
     NavComponent
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule,
+    BrowserModule,  
+    AppRoutingModule, 
     HttpClientModule,
-    FormsModule
-    
+    FormsModule,
+     AccordionModule.forRoot(),
+     BrowserAnimationsModule,
+    BsDropdownModule.forRoot(),
+ 
   ],
-  providers: [],
+  providers: [ ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

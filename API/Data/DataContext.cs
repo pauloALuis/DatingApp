@@ -14,10 +14,12 @@ namespace API.Data
         {
             //extend fosse
             //informa
+            //install : dotnet tool install --global dotnet-ef
+            //dotnet add package Microsoft.EntityFrameworkCore --version 8.0.7
         }
         //dotnet ef migrations add InitialCreate --context DataContext
         //dotnet ef migrations add InitialCreate -o Data/Migrations
         public DbSet<AppUser> Users { get; set; }
-        public DbSet<AppMovie> Movies { get; set; }
+       // public DbSet<AppMovie> Movies { get; set; }
     }
 }

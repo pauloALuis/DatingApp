@@ -9,7 +9,7 @@ import { Subscriber } from 'rxjs';
 })
 export class NavComponent implements OnInit {
   model: any = {}
-  loggedId= false;
+  loggedIn= false;
   constructor(private accountService: AccountService) {
     //super();
 
@@ -22,12 +22,16 @@ export class NavComponent implements OnInit {
     this.accountService.login(this.model ).subscribe({
       next: response => { 
         console.log(response);
-        this.loggedId = true;
+        this.loggedIn = true;
       
       },
       error: error=> console.log(error)
     });
-    console.log(this.model);
+    //console.log(this.model);
     
+  }
+  logout (){
+        this.loggedIn = false;
+
   }
 }

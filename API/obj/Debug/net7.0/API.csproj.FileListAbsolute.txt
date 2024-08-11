@@ -19,7 +19,6 @@ C:\Users\Paulucho Luis\Documents\CourseAspNetApiAngular\DatingApp\API\obj\Debug\
 C:\Users\Paulucho Luis\Documents\CourseAspNetApiAngular\DatingApp\API\obj\Debug\net7.0\staticwebassets.build.json
 C:\Users\Paulucho Luis\Documents\CourseAspNetApiAngular\DatingApp\API\obj\Debug\net7.0\staticwebassets.development.json
 C:\Users\Paulucho Luis\Documents\CourseAspNetApiAngular\DatingApp\API\obj\Debug\net7.0\scopedcss\bundle\API.styles.css
-C:\Users\Paulucho Luis\Documents\CourseAspNetApiAngular\DatingApp\API\obj\Debug\net7.0\API.csproj.CopyComplete
 C:\Users\Paulucho Luis\Documents\CourseAspNetApiAngular\DatingApp\API\obj\Debug\net7.0\API.dll
 C:\Users\Paulucho Luis\Documents\CourseAspNetApiAngular\DatingApp\API\obj\Debug\net7.0\refint\API.dll
 C:\Users\Paulucho Luis\Documents\CourseAspNetApiAngular\DatingApp\API\obj\Debug\net7.0\API.pdb
@@ -69,3 +68,5 @@ C:\Users\Paulucho Luis\Documents\CourseAspNetApiAngular\DatingApp\API\bin\Debug\
 C:\Users\Paulucho Luis\Documents\CourseAspNetApiAngular\DatingApp\API\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\Paulucho Luis\Documents\CourseAspNetApiAngular\DatingApp\API\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
 C:\Users\Paulucho Luis\Documents\CourseAspNetApiAngular\DatingApp\API\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Paulucho Luis\Documents\CourseAspNetApiAngular\DatingApp\API\obj\Debug\net7.0\API.sourcelink.json
+C:\Users\Paulucho Luis\Documents\CourseAspNetApiAngular\DatingApp\API\obj\Debug\net7.0\API.csproj.Up2Date
