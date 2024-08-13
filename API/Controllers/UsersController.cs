@@ -9,7 +9,7 @@ namespace API.Controllers
 {
 
     // [ApiController]
-    //[Route("api/[Contr0oller]")] // route: api/User
+    [Route("api/[Controller]")] // route: api/User
     [Authorize]
     public class UsersController : BaseApiController
     {
