@@ -1,4 +1,4 @@
-# See http://help.github.com/ignore-files/ for more about ignoring files.
+# See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
 
 # Compiled output
 /dist
@@ -10,7 +10,6 @@
 /node_modules
 npm-debug.log
 yarn-error.log
-/ssl
 
 # IDEs and editors
 .idea/
@@ -20,10 +19,6 @@ yarn-error.log
 *.launch
 .settings/
 *.sublime-workspace
-modules/.settings
-.settings/
-.vscode/launch.json
-.vscode/settings.json
 
 # Visual Studio Code
 .vscode/*
@@ -41,28 +36,7 @@ modules/.settings
 /libpeerconnection.log
 testem.log
 /typings
-/npm-debug.log  
 
-# build-analytics
-.build-analytics
-
-# rollup-test output
-/modules/rollup-test/dist/
-
-# User specific bazel settings
-.bazelrc.user
-
-# User specific ng-dev settings
-.ng-dev.user*
-.notes.md
-baseline.json
-
-# Ignore .history for the xyz.local-history VSCode extension
-.history
-
-# Husky
-.husky/_
-aio/content/examples/.DS_Store
 # System files
 .DS_Store
 Thumbs.db
