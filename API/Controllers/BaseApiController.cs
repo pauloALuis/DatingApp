@@ -9,11 +9,11 @@ namespace API.Controllers
 {
     [ApiController]
     [Route("api/[Controller]")] // route: api/Base
-
+    
     public class BaseApiController : ControllerBase
     {
-        private readonly DataContext _dataContext;
-/*
+       
+/* private readonly DataContext _dataContext;
         public BaseApiController(DataContext dataContext)
         {
             _dataContext = dataContext;

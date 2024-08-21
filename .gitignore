@@ -17,3 +17,4 @@ API/appsettings.Development.json
 node_modules
 client/ssl/localhost-key.pem
 client/ssl/localhost.pem
+StudentAssets

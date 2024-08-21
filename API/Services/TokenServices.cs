@@ -13,7 +13,13 @@ namespace API.Services
         private readonly SymmetricSecurityKey _key;
         public TokenServices(IConfiguration configuration)
         {
-            _key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["TokenKey"]));//;
+            var tokenKey = configuration["TokenKey"]??
+            throw new Exception ("Cannot acess tokenkey from appsetting");
+            
+            if (tokenKey.Length < 64) throw new Exception("Your tokenkey needs to be longer");
+            
+            
+            _key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(tokenKey));//;
             
         }
         public string CreateToken(AppUser User)

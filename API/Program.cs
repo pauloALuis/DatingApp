@@ -20,6 +20,7 @@ builder.Services.AddDbContext<DataContext>(opts =>
             GetConnectionString("DefaultConnection"));
         });
 builder.Services.AddCors();
+builder.Services.AddScoped<ITokenService, TokenServices>();
 var app = builder.Build();
 
 //num 24
