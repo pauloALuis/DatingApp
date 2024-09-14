@@ -1,0 +1,58 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Dating App</a>
+        
+      @if (loggedIn) {
+          <ul class="navbar-nav me-auto mb-2 mb-md-0" *ngIf="loggedIn">
+            <li class="nav-item">
+              <a class="nav-link "  href="#">Matches</a>
+            </li>
+              <li class="nav-item">
+              <a class="nav-link "  href="#">Lists</a>
+            </li>
+              <li class="nav-item">
+              <a class="nav-link "  href="#">Messages</a>
+            </li>  
+            
+            <li class="nav-item">
+              <a class="nav-link text-danger"  href="#" (click)="logout()">Logout</a>
+            </li>
+          </ul>
+      }
+
+
+      @if (loggedIn) {
+          <div  class="btn-group" dropdown> 
+            <button type="button" class="btn btn-info">Welcome {{model.username}}</button>
+             <button id="button-split" type="button" dropdownToggle class="btn btn-info dropdown-toggle dropdown-toggle-split"
+                      aria-controls="dropdown-split">
+                <span class="caret"></span>
+                <span class="sr-only visually-hidden">Split button!</span>
+              </button>
+              <ul id="dropdown-split" *dropdownMenu class="dropdown-menu"
+                  role="menu" aria-labelledby="button-split">
+                <li role="menuitem"><a class="dropdown-item" href="#">Privacy/Consent</a></li>
+                <li role="menuitem"><a class="dropdown-item" href="#">Edit Profile</a>
+                </li>
+                <li role="menuitem"><a class="dropdown-item" href="#">Perferences</a></li>
+                <li class="divider dropdown-divider"></li>
+                <li role="menuitem"><a class="dropdown-item text-danger" (click)="logout()">Logout</a>
+                </li>
+              </ul>
+          </div>
+      }
+
+            @if (!loggedIn) {
+               <form #loginForm="ngForm" (ngSubmit)="login()" class="d-flex" autocomplete="on" >
+                        <input name="username" class="form-control me-2" placeholder="Username"
+                        [(ngModel)]="model.username"  aria-label="attr.Username">
+                        <input name="password" class="form-control me-2" 
+                    [(ngModel)]="model.password" placeholder="Password" type="password" aria-label="attr.password">
+
+                 <button class="btn btn-outline-success" type="submit">Login</button>
+               </form>
+              }
+   
+
+      </div>
+  </nav>

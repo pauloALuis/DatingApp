@@ -8,9 +8,10 @@ using Microsoft.VisualBasic;
 namespace API.Controllers
 {
 
-    // [ApiController]
-   // [Route("api/[Controller]")] // route: api/User
-    [Authorize]
+    [Route("api/[Controller]")] // route: api/User
+    [AllowAnonymous]
+
+    // [Authorize]
     public class UsersController : BaseApiController
     {
         private readonly DataContext _dataContext;
