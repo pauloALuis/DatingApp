@@ -1,0 +1,4 @@
+.dropdown-toggle, .dropdown-item, .dropdown-toggle-split
+ .dropdown :hover{
+    cursor: pointer;
+}

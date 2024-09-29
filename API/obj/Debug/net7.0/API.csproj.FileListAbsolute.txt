@@ -70,3 +70,4 @@ C:\Users\Paulucho Luis\Documents\CourseAspNetApiAngular\DatingApp\API\bin\Debug\
 C:\Users\Paulucho Luis\Documents\CourseAspNetApiAngular\DatingApp\API\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\Paulucho Luis\Documents\CourseAspNetApiAngular\DatingApp\API\obj\Debug\net7.0\API.sourcelink.json
 C:\Users\Paulucho Luis\Documents\CourseAspNetApiAngular\DatingApp\API\obj\Debug\net7.0\API.csproj.Up2Date
+C:\Users\Paulucho Luis\Documents\CourseAspNetApiAngular\DatingApp\API\bin\Debug\net7.0\package-lock.json

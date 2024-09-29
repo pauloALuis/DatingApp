@@ -2,8 +2,8 @@
     <div class="container">
       <a class="navbar-brand" href="#">Dating App</a>
         
-      @if (loggedIn) {
-          <ul class="navbar-nav me-auto mb-2 mb-md-0" *ngIf="loggedIn">
+      @if (accountServices.currentUser()) {
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
             <li class="nav-item">
               <a class="nav-link "  href="#">Matches</a>
             </li>
@@ -21,20 +21,20 @@
       }
 
 
-      @if (loggedIn) {
-          <div  class="btn-group" dropdown> 
-            <button type="button" class="btn btn-info">Welcome {{model.username}}</button>
+      @if (accountServices.currentUser()) {
+          <div dropdown class="btn-group" > 
+            <button type="button" class="btn btn-info ">Welcome {{model.username}}</button>
              <button id="button-split" type="button" dropdownToggle class="btn btn-info dropdown-toggle dropdown-toggle-split"
-                      aria-controls="dropdown-split">
+                      >
                 <span class="caret"></span>
                 <span class="sr-only visually-hidden">Split button!</span>
               </button>
               <ul id="dropdown-split" *dropdownMenu class="dropdown-menu"
                   role="menu" aria-labelledby="button-split">
-                <li role="menuitem"><a class="dropdown-item" href="#">Privacy/Consent</a></li>
-                <li role="menuitem"><a class="dropdown-item" href="#">Edit Profile</a>
+                <li role="menuitem"><a class="dropdown-item">Privacy/Consent</a></li>
+                <li role="menuitem"><a class="dropdown-item" >Edit Profile</a>
                 </li>
-                <li role="menuitem"><a class="dropdown-item" href="#">Perferences</a></li>
+                <li role="menuitem"><a class="dropdown-item" >Perferences</a></li>
                 <li class="divider dropdown-divider"></li>
                 <li role="menuitem"><a class="dropdown-item text-danger" (click)="logout()">Logout</a>
                 </li>
@@ -42,7 +42,7 @@
           </div>
       }
 
-            @if (!loggedIn) {
+            @if (!accountServices.currentUser()) {
                <form #loginForm="ngForm" (ngSubmit)="login()" class="d-flex" autocomplete="on" >
                         <input name="username" class="form-control me-2" placeholder="Username"
                         [(ngModel)]="model.username"  aria-label="attr.Username">
