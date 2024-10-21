@@ -13,7 +13,7 @@
     <label >Username</label>
 
 </div> 
-<div class="mb-3">
+<!-- <div class="mb-3">
         <label >Who is your favourite user?</label>
         <select name="" id="" class="form-select">
             @for (user of usersFormHomeComponent(); track $index) {
@@ -22,7 +22,7 @@
                 </option>
             }
         </select>
-</div>
+</div> -->
 <div class="div mb-3 form-floating">
     <input type="password"
            class="form-control"
@@ -37,7 +37,7 @@
 <div class="form-group text-center">
     <button class="btn btn-success me-2" type="submit">Register</button>
     <button class="btn btn-default me-2" (click)="cancel()" type="button">
-        Cancel</button><!-- <span class="text-danger" ></span> -->
+        <span class="text-danger" >Cancel</span></button><!--  -->
 
 </div>
 </form>
